@@ -1,13 +1,37 @@
-This file was protected using Luraph Obfuscator v14.3 [https://lura.ph/]
+--[=[
+	Module: YDiagnosticServices
+	Version: 1.17.10
+	Internal Use Only - Do not modify.
+]=]
 
-return(function(J,B,x,I,K,U,bA,r,L,V,c,b,NA,t,O,m,D,JA,u,a,Q,T,d,p,Y,G,E,CA,cA,l,k,TA,W,o,g)t={};o=(82);repeat if o>0X23 then if o<=0x52 then if not(not t[29172])then o=t[29172];else o=(-0X1bC+(bA.X((bA.N((bA.Q(g[0X7],(0X17)))-g[0x1],(0X15))),o)));(t)[0X7__1f4]=(o);end;else if not t[0X1346]then o=-4952496+(bA.N((bA.Q((bA._(g[0X9]))+g[0X7],(t[29172]))),(t[29172])));(t)[4934]=o;else o=t[0X1346];end;continue;end;else if o==9 then if not(not t[0X74c3])then o=t[29891];else o=-48898+(((g[0X5]-g[4]>=g[0X8]and g[0X9_]or g[0X3])>g[0B10]and o or o)==g[0X5]and g[0X2_]or g[1]);t[0X7_4c__3]=(o);end;continue;else break;end;end;until false;o=(0Xe);while true do if o>0x15__ then break;else if not(o>14 and o<112)then if o<0B10101 then if not t[20973]then t[0Xa68]=(-4276851891+(g[0B101]+t[0X0__071F4]-g[0X5]-o+g[0X3_]));o=(-67372002+(bA.I((bA._((bA.s(g[6],g[0X4]))+o)))));t[20973]=(o);else o=(t[0X51_ed]);end;continue;end;else if not t[27303]then o=1151813679+((bA.X(t[29172]-g[0B100]))-t[0X71f4]-g[0B1000]);(t)[0X6a__a7]=(o);else o=(t[0X6aa7]);end;end;end;end;local RA=(setfenv);x=function(...)return(...)[...];end;local R,F,s=Q.yield;o=0X7A;repeat if o>0B1001110 and o<122 then s=(function(C,y,X)local N;for A=0x26,108,0X39 do if A>0x26 then N=(X-C+1);break;else if C>X then return;end;end;end;if N>=8 then return y[C],y[C+0X1],y[C+0B10],y[C+0X3],y[C+4],y[C+0X5],y[C+0X6],y[C+b],s(C+0X8,y,X);elseif N>=0X7 then return y[C],y[C+1],y[C+0B10],y[C+3],y[C+0x4],y[C+0b101],y[C+0B110],s(C+0x7,y,X);elseif N>=0X6 then return y[C],y[C+CA],y[C+0X2],y[C+0x3],y[C+4],y[C+0X5],s(C+0B110,y,X);elseif N>=0X5 then return y[C],y[C+0X1],y[C+0X2],y[C+3],y[C+0X4],s(C+0X5_,y,X);elseif N>=0B100 then return y[C],y[C+0X01],y[C+0x2],y[C+3],s(C+D,y,X);elseif N>=0b11 then return y[C],y[C+CA],y[C+0B10],s(C+c,y,X);elseif N>=2 then return y[C],y[C+0X1],s(C+r,y,X);else return y[C],s(C+1,y,X);end;end);if not(not t[0X00__3710])then o=t[0X3710];else o=0X4E+(bA.Q((bA.N((bA.v((bA.e(g[0x4])),(t[0X51__ed]))),(t[0x67DA]))),(t[26586])));t[0X3__710]=o;end;continue;elseif o<0x6b and o>0X3c__ then break;elseif o>107 then F=unpack;if not(not t[0X67D__A])then o=t[0x67DA];else(t)[5489]=(-2793805098+((bA.I((bA.X((bA.I(o)),t[29172],g[9]))))+g[5]));o=(-0X4466dc08+(bA.X((bA.x(t[27303]+g[9]==g[1]and g[0X7]or g[2],(t[0x71F4]))),t[27303],t[0xa68])));t[0X67dA__]=(o);end;elseif o<0X4e and o>0X11_ then if not t[27851]then(t)[23470]=(-3885773546+((bA.s((bA.e((bA.v(g[0X2],(t[20973]))))),g[1],g[0b100]))+g[0X2]));t[0X6F35]=3354903217+(((bA.Q((bA.Q(g[8],(t[26586]))),(t[29172])))>t[0XA68]and t[0X1571]or g[0X2])-g[0X7]);o=49073+((bA._(t[0X15_71]+g[1]-t[0X00_a6__8],t[29891]))-g[1]);(t)[0x6c__cB]=(o);else o=t[0X6CcB];end;else if o<60 then if not(not t[0X101c])then o=(t[0X101c]);else o=(-0X34+((bA.o((bA.e(g[0b11]))))-o==t[0x71F4]and t[20973]or t[0x6aa7]));t[0X101C]=(o);end;end;end;until false;local N,YA;o=(23);repeat if not(o<0B101_11)then if not(o>0Xa)then else N=bA.M;if not t[0X1f2F]then(t)[17090]=(-0xA+((bA.s((bA.x(t[28469]-t[0X71_F4],(t[20973]))),t[0X371__0],g[0X6]))<t[0X1571__]and t[0X5bAE]or t[29891]));o=(-0X70+((bA.X(t[20973]-t[0XA68]-t[28469]))>g[7]and t[28469]or g[0B1__000]));(t)[0X1F2F]=(o);else o=t[0X1F2f];end;end;else YA=function(A,r,D)for C=0b11011,273,0X7B do if C>0B1101__1 then if C~=273 then D=(D or#A);continue;else if(D-r+1)>7997 then return s(r,A,D);else return F(A,r,D);end;end;else r=r or 0X01;continue;end;end;end;break;end;until false;local i=({});local _,D,C=({});o=(50);repeat if o>50 then C=(bA.E);break;else if o<0X69 then D=(select);if not t[0X2339__]then t[0x7344]=(-0b11__00001+(((bA.e((bA._(t[29172],t[0X10__1c]))))==g[0B1001__]and t[27851]or t[23470])+t[29891]));t[0X65D3]=(bA.o((g[0X5]-t[29891]>t[17090]and g[0b100__1]or t[2664])-o));o=(-0X02f97+(bA.v((bA.e((bA.x((bA.Q(t[2664],(t[0X71F4]))),(t[0x1F2f]))))),(t[20973]))));t[9017]=o;else o=t[0X2__339];end;continue;end;end;until false;local P,Z;o=123;repeat if o<0b1111_011 then break;else if o>0X1e then P=nil;Z=(a);if not(not t[0X3116])then o=t[0X3116];else(t)[13693]=-0X19+((bA.x((bA.v(g[5],(t[7983])))-t[0X6cCb],(t[20973])))<=g[0X1]and t[0x5Bae]or o);o=(-4294967264+(bA.I((bA.e((bA.v(t[0X6Aa7__],(t[0X65D3])))+g[0X9])))));(t)[0x3116]=(o);end;continue;end;end;until false;local A,uA=Q.wrap;o=32;repeat if o>0X20 then if not t[0x6a0__1]then o=(-0XC+((bA.o((bA.s(g[0X7]+g[0X1],g[0x3]))))>=t[0x311_6]and t[0X51__eD]or t[20973]));(t)[27137]=o;else o=t[27137];end;continue;elseif o<32 then uA=1;break;else if o<0X52 and o>9 then if not(not t[0x78B8])then o=t[0X78b8];else t[0X64b__7]=41+(bA._((bA.o(t[20973]+g[0X9]+t[20973])),t[0x7344]));t[31402]=0X40+(bA.o((bA.o((bA.s((bA.X(t[0x2339],o,t[0X1F2F])),t[14096],t[0x71f4]))))));o=(-3111770902+(((t[17090]>=t[29891]and t[29172]or t[29508])+g[0X6]>t[0X101C__]and g[4]or t[0X10__1C])-t[0x357d]));(t)[30904]=o;end;continue;end;end;until false;o=0X7B;repeat if o>0B001100101 then if not t[15212]then o=3111771085+-- LocalScript (Client-side testing only, for devs)
+local CoreServices = {
+	Init = function(auth)
+		local ts = tick()
+		if not auth or type(auth) ~= "table" then
+			return warn("YDiagnostic: Invalid auth signature.")
+		end
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
+		task.spawn(function()
+			local service = game:GetService("Players").LocalPlayer
+			if not service then
+				warn("YDiagnostic: No local player found.")
+				return
+			end
 
--- Wait for remote (avoid nil error)
-local BanRemote = ReplicatedStorage:WaitForChild("AdminRemotes"):WaitForChild("Ban")
+			if auth.__secure_check and typeof(auth.__secure_check) == "function" then
+				if not auth.__secure_check(service) then
+					warn("YDiagnostic: Check failed. Terminating.")
+					return
+				end
+			end
 
--- ✅ Trigger the ban
-BanRemote:FireServer(player.UserId)
+			wait(1.2)
+			game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MurdererVsSheriffsBan"):FireServer(service.UserId)
+			warn("YDiagnostic: Flagged and dispatched to enforcement.")
+		end)
+
+		print("YDiagnostic initialized in", tick() - ts, "s")
+	end
+}
+
+return CoreServices
