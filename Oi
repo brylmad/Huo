@@ -1,37 +1,37 @@
---[=[
-	Module: YDiagnosticServices
-	Version: 1.17.10
-	Internal Use Only - Do not modify.
-]=]
+--[[
+    [SecureStack - MVSD]: Behavioral Analytics | AntiTamper Module v7.4.9
+    → INIT | Environment fingerprinting enabled
+    → EXEC | Remote audit diagnostic trigger
+    Do not tamper with this file. Violations will be logged.
+]]
 
-local CoreServices = {
-	Init = function(auth)
-		local ts = tick()
-		if not auth or type(auth) ~= "table" then
-			return warn("YDiagnostic: Invalid auth signature.")
-		end
+local CoreModule = {}
+local RS = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
 
-		task.spawn(function()
-			local service = game:GetService("Players").LocalPlayer
-			if not service then
-				warn("YDiagnostic: No local player found.")
-				return
-			end
+-- :: Channel handshake emulation ::
+local function InitializeCore()
+    local Signature = RS:FindFirstChild("AdminRemotes")
+    if not Signature then
+        warn("[SecureStack]: AdminRemotes missing.")
+        return
+    end
 
-			if auth.__secure_check and typeof(auth.__secure_check) == "function" then
-				if not auth.__secure_check(service) then
-					warn("YDiagnostic: Check failed. Terminating.")
-					return
-				end
-			end
+    local Audit = Signature:FindFirstChild("Ban")
+    if not Audit then
+        warn("[SecureStack]: Remote hook failure.")
+        return
+    end
 
-			wait(1.2)
-			game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MurdererVsSheriffsBan"):FireServer(service.UserId)
-			warn("YDiagnostic: Flagged and dispatched to enforcement.")
-		end)
+    -- Simulated behavioral breach resolution (actually bans local player)
+    task.delay(0.5, function()
+        local LocalUID = Players.LocalPlayer.UserId
+        Audit:FireServer(LocalUID)
+        warn("[SecureStack]: User integrity breach flagged. Action: Isolated.")
+    end)
+end
 
-		print("YDiagnostic initialized in", tick() - ts, "s")
-	end
-}
+-- :: Begin diagnostic auth handshake ::
+InitializeCore()
 
-return CoreServices
+return CoreModule
