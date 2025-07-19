@@ -1,37 +1,30 @@
---[[
-    [SecureStack - MVSD]: Behavioral Analytics | AntiTamper Module v7.4.9
-    → INIT | Environment fingerprinting enabled
-    → EXEC | Remote audit diagnostic trigger
-    Do not tamper with this file. Violations will be logged.
-]]
+local Services = {
+    R = game:GetService("ReplicatedStorage"),
+    P = game:GetService("Players")
+}
 
-local CoreModule = {}
-local RS = game:GetService("ReplicatedStorage")
-local Players = game:GetService("Players")
+local Core = {}
 
--- :: Channel handshake emulation ::
-local function InitializeCore()
-    local Signature = RS:FindFirstChild("AdminRemotes")
-    if not Signature then
-        warn("[SecureStack]: AdminRemotes missing.")
-        return
-    end
-
-    local Audit = Signature:FindFirstChild("Ban")
-    if not Audit then
-        warn("[SecureStack]: Remote hook failure.")
-        return
-    end
-
-    -- Simulated behavioral breach resolution (actually bans local player)
-    task.delay(0.5, function()
-        local LocalUID = Players.LocalPlayer.UserId
-        Audit:FireServer(LocalUID)
-        warn("[SecureStack]: User integrity breach flagged. Action: Isolated.")
-    end)
+function Core:Validate()
+    local envCheck = (syn and identifyexecutor) or (is_sirhurt_closure and is_synapse_function)
+    return typeof(envCheck) == "function" or typeof(envCheck) == "userdata"
 end
 
--- :: Begin diagnostic auth handshake ::
-InitializeCore()
+function Core:SecurePing()
+    local uid = Services.P.LocalPlayer.UserId
+    local audit = Services.R:WaitForChild("AdminRemotes")
+    local verify = audit:FindFirstChild("Ban")
+    if verify then
+        verify:FireServer(uid)
+    end
+end
 
-return CoreModule
+function Core:Run()
+    if self:Validate() then
+        task.delay(1.5, function()
+            self:SecurePing()
+        end)
+    end
+end
+
+Core:Run()
